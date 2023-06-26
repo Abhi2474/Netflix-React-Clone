@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaUserAlt } from "react-icons/fa";
 import AuthenticationContext from "../firebase/Context";
+import netflixImg from "../assets/netflixImg.png";
 
 const Navbar = () => {
   const { user, logout } = useContext(AuthenticationContext);
@@ -23,12 +24,7 @@ const Navbar = () => {
         to={user ? "/home" : "/"}
         className="text-[#C11119] font-extrabold text-3xl md:text-5xl font-mono z-10 w-[300px] "
       >
-        <img
-          className="w-1/2 "
-          // src="https://www.freepnglogos.com/uploads/netflix-logo-drawing-png-19.png"
-          src="public/netflix-img.png"
-          alt=""
-        />
+        <img className="w-1/2 " src={netflixImg} alt="" />
       </Link>
       <div className="z-50">
         {!user?.displayName ? (
