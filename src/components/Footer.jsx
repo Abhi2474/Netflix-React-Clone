@@ -7,7 +7,7 @@ const Footer = () => {
     <>
       <footer className=" h-full text-xl py-10 flex flex-col gap-4 opacity-80 justify-center items-center my-10 border-t-8 border-[#232323]">
         Developed by Abhishek Gauttam
-        <div className="flex justify-between w-[10%] text-2xl">
+        <div className="flex gap-4 justify-between text-2xl">
           <a href="https://github.com/Abhi2474" target="_blank">
             <BsGithub className="hover:scale-150 transition-all" />
           </a>
@@ -25,7 +25,7 @@ const Footer = () => {
           <IoMail className="text-2xl" /> &#x2002;
           <a
             href="mailto:amangautam2474@gmail.com"
-            className="hover:no-underline underline"
+            className="hover:no-underline lg:underline"
           >
             amangautam2474@gmail.com
           </a>
